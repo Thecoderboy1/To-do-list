@@ -1,0 +1,146 @@
+:root {
+    --bgColor: greenyellow !important;
+}
+
+.dilogBox {
+    width: 250px;
+    height: 130px;
+    background-color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 1px 1px 3px gray;
+    /* visibility: hidden; */
+    animation: pop .1s linear forwards;
+}
+
+.dilogBox span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dilogBox button {
+    padding: 8px 34px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 3px grey;
+    font-weight: bold;
+    background-color: var(--bgColor);
+}
+
+.dilogBox div {
+
+    margin-top: 15px;
+}
+
+/* creating the users input field */
+#addItemsDilog {
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 40%;
+    box-shadow: 2px 2px 8px grey;
+    padding: 10px;
+    transition: all .1s linear forwards;
+    /* visibility: hidden; */
+}
+
+#addItemsDilog textarea {
+    resize: none;
+    outline: none;
+    padding: 10px;
+}
+
+#addItemsDilog button {
+    padding: 5px 34px;
+    margin-top: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 3px grey;
+    background-color: rgb(235, 66, 66);
+    color: white;
+
+
+}
+
+#addItemsDilog button:hover {
+    background-color: rgb(224, 8, 8);
+}
+
+
+
+
+.pop-animation {
+    animation: pop 0.3s cubic-bezier(0.36, 1.41, 0.58, 1) both;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* creating the Unpop animation is here  ------------ */
+.unpop-animation {
+    animation: unpop 0.5s cubic-bezier(0.36, 1.41, 0.58, 1) both;
+}
+
+@keyframes unpop {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+/* creat two button styles for the Done and delt button  */
+.done {
+    background-color: yellowgreen;
+    border: none;
+    color: greenyellow;
+    background-color: transparent;
+    filter: drop-shadow(1px 1px 1px gray);
+    outline: none;
+    padding: 0px 10px;
+    font-weight: bold;
+    transition: all .3s;
+    margin: 5px 0px 0px 10px;
+}
+
+.done:hover {
+    background-color: rgb(218, 198, 198);
+    color: black;
+}
+
+.delete {
+    background-color: transparent;
+    color: red;
+    border: none;
+    filter: drop-shadow(1px 1px 1px gray);
+    outline: 1px gray;
+    padding: 0px 10px;
+    transition: all .3s;
+    font-weight: bold;
+    margin: 5px 0px 0px 10px
+}
+
+.delete:hover {
+    background-color: rgb(218, 198, 198);
+    color: black;
+}

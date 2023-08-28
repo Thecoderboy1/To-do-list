@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;500;600;900&family=Work+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- adding the stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="DilogBox.css">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <main>
+        <div class="dilogBox pop-animation" id="dilogBox">
+            <span id="msg">Your message is here</span>
+            <div>
+                <button class="btn" id="btn">Yes</button>
+            </div>
+        </div>
+        <div class="mainDisplay">
+            <div class="title">
+                <h1>
+                    To-Do List
+                </h1>
+            </div>
+            <div id="List-area">
+                <div class="tasks-area">
+                    <ol id="addworks">
+
+                    </ol>
+                </div>
+            </div>
+            <div class="btn-div">
+                <button class="addbtn" id="addbtn">
+                    click me to creat
+                </button>
+            </div>
+            <div id="addItemsDilog" class="addiiemDilog pop-animation">
+                <div>
+                    <textarea name="work" id="work" cols="25" rows="5" placeholder="Enter you works"></textarea>
+                </div>
+                <div>
+                    <button class="save-btn" id="save-btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
